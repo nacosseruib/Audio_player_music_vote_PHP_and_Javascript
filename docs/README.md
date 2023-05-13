@@ -1,10 +1,9 @@
-# Noctifer Music
+# TuneBox Music
 
-Noctifer Music is a PHP/HTML5 script to turn any self-hosted audio library into a functional music player running within a browser. 
+TuneBox Music is a PHP/HTML5 script to turn any self-hosted audio library into a functional music player running within a browser. 
 
-Try the [**live demo**](https://music.lrk.tools/demo) using the password 123.
 
-![Noctifer Music Screenshot](./default.jpg)
+![TuneBox Music Screenshot](./browse.png)
 
 The current version is 0.7.3. 
 
@@ -17,19 +16,12 @@ Simply drop `index.php` into any online directory that has audio files (and/or s
 
 ### Supports any format your browser does
 
-Noctifer Music uses the HTML5 `audio` tag to serve the music. Thus, format support is entirely dependent on your browser. 
+TuneBox Music uses the HTML5 `audio` tag to serve the music. Thus, format support is entirely dependent on your browser. 
 
-The [**live demo**](https://music.lrk.tools/demo) has a selection of common file formats available in the *Different formats* folder, so you can see what works in your browser. (The other folders contain MP3 files, which should work everywhere.)
-
-### Metadata
-
-The songs' metadata is read using James Heinrich's [getID3](https://github.com/JamesHeinrich/getID3). For most file formats, this includes artist, track title, album title, year, and album art.
-
-### Custom playlist
 
 Folder-based browsing is the default, but a custom selection of songs can be added to a playlist. The order of songs in the playlist can also be changed on the fly.
 
-![Playlist view](./playlist.jpg)
+![Playlist view](./playlist.png)
 
 The playlist is saved in a cookie with a lifetime of one year.
 
@@ -41,15 +33,10 @@ Shuffle mode can be toggled and will apply immediately to your current active so
 
 Browsing and playlist editing is implemented using AJAX calls, leaving the currently playing file unaffected. The page only reloads when a new file is loaded.
 
-### Responsive design
-
-The player adapts to smaller viewports and will work on your phone.
-
-![Mobile view](./mobile.jpg)
 
 ### Keyboard shortcuts and swipes
 
-Noctifer Music uses the original WinAMP keyboard shortcuts, where
+TuneBox Music uses the original WinAMP keyboard shortcuts, where
 
 * `z` goes to the previous song;
 * `x` plays/restarts the song*;
@@ -67,11 +54,7 @@ On mobile, swiping left/right switches to the next/previous track.
 
 Direct links to individual files will always play, but access to directory contents can be password-protected. 
 
-### Different themes
-
-Custom background images and colour schemes can be used. Aside from the above two themes, a third, dark theme is included by default.
-
-![Dark theme](./dark.jpg)
+![Vote page](./vote.png)
 
 
 ## Usage
@@ -80,7 +63,7 @@ Custom background images and colour schemes can be used. Aside from the above tw
 
 It is recommended to have **PHP 7 or higher** available on your server. PHP 5 should work too, but has known issues with non-ASCII file names.
 
-To install Noctifer Music, simply copy its files to a directory. It only needs to be copied once into the root of your library. The player can navigate subdirectories, but does not allow higher directories to be accessed.
+To install TuneBox Music, simply copy its files to a directory. It only needs to be copied once into the root of your library. The player can navigate subdirectories, but does not allow higher directories to be accessed.
 
 Most importantly, copy `index.php`. Now, when accessing this directory using a browser, the player will show that directory's compatible contents, ready to be played.
 
